@@ -29,6 +29,18 @@
 		1B1593CF285C615E00D9EA56 /* WritePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593CE285C615E00D9EA56 /* WritePostViewController.swift */; };
 		1B1593D1285C618100D9EA56 /* WritePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593D0285C618100D9EA56 /* WritePostView.swift */; };
 		1B1593D3285C619900D9EA56 /* WritePostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593D2285C619900D9EA56 /* WritePostModel.swift */; };
+		1B1593D6285C6E6E00D9EA56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593D5285C6E6E00D9EA56 /* DetailViewController.swift */; };
+		1B1593D8285C6E7F00D9EA56 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593D7285C6E7F00D9EA56 /* DetailView.swift */; };
+		1B1593DA285C6E8B00D9EA56 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593D9285C6E8B00D9EA56 /* DetailViewModel.swift */; };
+		1B1593DC285C6EFE00D9EA56 /* DetailPostHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593DB285C6EFE00D9EA56 /* DetailPostHeaderView.swift */; };
+		1B1593DE285C70F000D9EA56 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593DD285C70F000D9EA56 /* CommentTableViewCell.swift */; };
+		1B1593E0285C722B00D9EA56 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593DF285C722B00D9EA56 /* TextTableViewCell.swift */; };
+		1B1593E2285C740C00D9EA56 /* PostMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593E1285C740C00D9EA56 /* PostMode.swift */; };
+		1B1593E4285C7F1600D9EA56 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593E3285C7F1600D9EA56 /* Alert+Extension.swift */; };
+		1B1593E7285CA3B600D9EA56 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1593E6285CA3B600D9EA56 /* Toast */; };
+		1B1593EA285CA46700D9EA56 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593E9285CA46700D9EA56 /* CommentViewController.swift */; };
+		1B1593EC285CA49D00D9EA56 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593EB285CA49D00D9EA56 /* CommentView.swift */; };
+		1B1593EE285CA4D400D9EA56 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1593ED285CA4D400D9EA56 /* CommentViewModel.swift */; };
 		1B8CAF8B28572EAD00647D18 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CAF8A28572EAD00647D18 /* StartViewController.swift */; };
 		1B8CAF8D28572F0000647D18 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CAF8C28572F0000647D18 /* StartViewModel.swift */; };
 		1B8CAF8F2857301700647D18 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CAF8E2857301700647D18 /* BaseViewController.swift */; };
@@ -76,6 +88,17 @@
 		1B1593CE285C615E00D9EA56 /* WritePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostViewController.swift; sourceTree = "<group>"; };
 		1B1593D0285C618100D9EA56 /* WritePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostView.swift; sourceTree = "<group>"; };
 		1B1593D2285C619900D9EA56 /* WritePostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostModel.swift; sourceTree = "<group>"; };
+		1B1593D5285C6E6E00D9EA56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1B1593D7285C6E7F00D9EA56 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1B1593D9285C6E8B00D9EA56 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1B1593DB285C6EFE00D9EA56 /* DetailPostHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostHeaderView.swift; sourceTree = "<group>"; };
+		1B1593DD285C70F000D9EA56 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		1B1593DF285C722B00D9EA56 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		1B1593E1285C740C00D9EA56 /* PostMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMode.swift; sourceTree = "<group>"; };
+		1B1593E3285C7F1600D9EA56 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
+		1B1593E9285CA46700D9EA56 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		1B1593EB285CA49D00D9EA56 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		1B1593ED285CA4D400D9EA56 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		1B8CAF8A28572EAD00647D18 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		1B8CAF8C28572F0000647D18 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		1B8CAF8E2857301700647D18 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1593E7285CA3B600D9EA56 /* Toast in Frameworks */,
 				1B964C5F285476C7004B4C41 /* SnapKit in Frameworks */,
 				1B964C62285476D7004B4C41 /* Then in Frameworks */,
 				1B964C65285476EA004B4C41 /* IQKeyboardManagerSwift in Frameworks */,
@@ -169,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				1B1593C3285C442600D9EA56 /* PostViewCell.swift */,
+				1B1593DF285C722B00D9EA56 /* TextTableViewCell.swift */,
+				1B1593DD285C70F000D9EA56 /* CommentTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -181,6 +207,27 @@
 				1B1593CE285C615E00D9EA56 /* WritePostViewController.swift */,
 			);
 			path = WritePost;
+			sourceTree = "<group>";
+		};
+		1B1593D4285C6E5D00D9EA56 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1B1593D7285C6E7F00D9EA56 /* DetailView.swift */,
+				1B1593DB285C6EFE00D9EA56 /* DetailPostHeaderView.swift */,
+				1B1593D9285C6E8B00D9EA56 /* DetailViewModel.swift */,
+				1B1593D5285C6E6E00D9EA56 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1B1593E8285CA45C00D9EA56 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				1B1593EB285CA49D00D9EA56 /* CommentView.swift */,
+				1B1593ED285CA4D400D9EA56 /* CommentViewModel.swift */,
+				1B1593E9285CA46700D9EA56 /* CommentViewController.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		1B964C3D285476B2004B4C41 = {
@@ -202,6 +249,8 @@
 		1B964C48285476B2004B4C41 /* Myboard */ = {
 			isa = PBXGroup;
 			children = (
+				1B1593E8285CA45C00D9EA56 /* Comment */,
+				1B1593D4285C6E5D00D9EA56 /* Detail */,
 				1B1593CD285C614400D9EA56 /* WritePost */,
 				1B1593C2285C438100D9EA56 /* TableViewCell */,
 				1B964C79285480DD004B4C41 /* Base */,
@@ -232,6 +281,7 @@
 				1B1593AF285C2DC300D9EA56 /* URL+Extension.swift */,
 				1B1593B3285C2E2700D9EA56 /* URLSession+Extension.swift */,
 				1B1593BE285C3CCD00D9EA56 /* Date+Extension.swift */,
+				1B1593E3285C7F1600D9EA56 /* Alert+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +318,7 @@
 				1B964C7D285494A6004B4C41 /* ImageEnums.swift */,
 				1B964C832854992A004B4C41 /* TransitionEnum.swift */,
 				1B1593A8285C2B7900D9EA56 /* APIEnum.swift */,
+				1B1593E1285C740C00D9EA56 /* PostMode.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -302,6 +353,7 @@
 				1B964C5E285476C7004B4C41 /* SnapKit */,
 				1B964C61285476D7004B4C41 /* Then */,
 				1B964C64285476EA004B4C41 /* IQKeyboardManagerSwift */,
+				1B1593E6285CA3B600D9EA56 /* Toast */,
 			);
 			productName = Myboard;
 			productReference = 1B964C46285476B2004B4C41 /* Myboard.app */;
@@ -335,6 +387,7 @@
 				1B964C5D285476C7004B4C41 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				1B964C60285476D7004B4C41 /* XCRemoteSwiftPackageReference "Then" */,
 				1B964C63285476EA004B4C41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				1B1593E5285CA3B600D9EA56 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 1B964C47285476B2004B4C41 /* Products */;
 			projectDirPath = "";
@@ -369,10 +422,16 @@
 				1B964C7E285494A6004B4C41 /* ImageEnums.swift in Sources */,
 				1B964C81285494F1004B4C41 /* Navigator.swift in Sources */,
 				1B1593D1285C618100D9EA56 /* WritePostView.swift in Sources */,
+				1B1593D6285C6E6E00D9EA56 /* DetailViewController.swift in Sources */,
+				1B1593EA285CA46700D9EA56 /* CommentViewController.swift in Sources */,
+				1B1593D8285C6E7F00D9EA56 /* DetailView.swift in Sources */,
+				1B1593E0285C722B00D9EA56 /* TextTableViewCell.swift in Sources */,
 				1B964C67285477C1004B4C41 /* Endpoint.swift in Sources */,
 				1B1593B0285C2DC300D9EA56 /* URL+Extension.swift in Sources */,
+				1B1593DE285C70F000D9EA56 /* CommentTableViewCell.swift in Sources */,
 				1B8CAF8B28572EAD00647D18 /* StartViewController.swift in Sources */,
 				1B1593A5285C190E00D9EA56 /* SignUpView.swift in Sources */,
+				1B1593DC285C6EFE00D9EA56 /* DetailPostHeaderView.swift in Sources */,
 				1B1593C1285C3E5A00D9EA56 /* MainPostView.swift in Sources */,
 				1B1593B2285C2DE700D9EA56 /* Endpoint+Extension.swift in Sources */,
 				1B1593B4285C2E2700D9EA56 /* URLSession+Extension.swift in Sources */,
@@ -382,6 +441,9 @@
 				1B964C7328547FFB004B4C41 /* UITableViewCell+Extension.swift in Sources */,
 				1B15939E285C115800D9EA56 /* LoginViewController.swift in Sources */,
 				1B1593A7285C21FD00D9EA56 /* SignUpViewModel.swift in Sources */,
+				1B1593EC285CA49D00D9EA56 /* CommentView.swift in Sources */,
+				1B1593E4285C7F1600D9EA56 /* Alert+Extension.swift in Sources */,
+				1B1593EE285CA4D400D9EA56 /* CommentViewModel.swift in Sources */,
 				1B1593C8285C4B5500D9EA56 /* MainPostViewModel.swift in Sources */,
 				1B964C7128547FDB004B4C41 /* Reusable.swift in Sources */,
 				1B1593BC285C345300D9EA56 /* LoginViewModel.swift in Sources */,
@@ -393,10 +455,12 @@
 				1B1593BA285C342200D9EA56 /* LoginView.swift in Sources */,
 				1B8CAFE32859750200647D18 /* UserDefaultWrapper.swift in Sources */,
 				1B1593CF285C615E00D9EA56 /* WritePostViewController.swift in Sources */,
+				1B1593E2285C740C00D9EA56 /* PostMode.swift in Sources */,
 				1B8CAF8F2857301700647D18 /* BaseViewController.swift in Sources */,
 				1B964C6F28547955004B4C41 /* StartView.swift in Sources */,
 				1B1593AC285C2BD700D9EA56 /* APIService.swift in Sources */,
 				1B1593CA285C4B9E00D9EA56 /* PostModel.swift in Sources */,
+				1B1593DA285C6E8B00D9EA56 /* DetailViewModel.swift in Sources */,
 				1B1593A1285C11B800D9EA56 /* SignUpViewController.swift in Sources */,
 				1B964C842854992A004B4C41 /* TransitionEnum.swift in Sources */,
 				1B1593D3285C619900D9EA56 /* WritePostModel.swift in Sources */,
@@ -608,6 +672,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1B1593E5285CA3B600D9EA56 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		1B964C5D285476C7004B4C41 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -635,6 +707,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1B1593E6285CA3B600D9EA56 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B1593E5285CA3B600D9EA56 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		1B964C5E285476C7004B4C41 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1B964C5D285476C7004B4C41 /* XCRemoteSwiftPackageReference "SnapKit" */;

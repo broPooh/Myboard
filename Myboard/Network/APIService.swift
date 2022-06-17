@@ -55,7 +55,7 @@ class APIService {
         
     }
     
-    static func editPost() {
+    static func updatePost() {
         
     }
     
@@ -72,7 +72,7 @@ class APIService {
         
     }
     
-    static func editComment() {
+    static func updateComment() {
         
     }
     

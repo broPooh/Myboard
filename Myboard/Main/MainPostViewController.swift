@@ -41,8 +41,9 @@ class MainPostViewController: BaseViewController {
     }
     
     @objc func floatingButtonClicked() {
-        let nav = UINavigationController(rootViewController: WritePostViewController())
-        navigator?.changeTo(viewController: nav)
+        let writeViewController = WritePostViewController()
+        writeViewController.mode = .write
+        navigator?.changeTo(viewController: UINavigationController(rootViewController: writeViewController))
     }
     
     private func navigationConfig() {
@@ -81,6 +82,10 @@ extension MainPostViewController: UITableViewDelegate, UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigator?.changeTo(viewController: DetailViewController(), transitionStyle: .push)
     }
     
 }
