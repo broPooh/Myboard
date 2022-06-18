@@ -58,6 +58,7 @@ class MainPostView: BaseUIView {
     private func tableViewConfig() {
         postTableView.separatorStyle = .none
         postTableView.register(PostViewCell.self, forCellReuseIdentifier: PostViewCell.reuseIdentifier)
+        postTableView.rowHeight = 150
     }
     
     private func bottonConfig() {

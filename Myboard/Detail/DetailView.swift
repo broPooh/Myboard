@@ -26,7 +26,7 @@ class DetailView: BaseUIView {
         super.setupConstraints()
         
         detailHeaderView.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide)
+            $0.top.equalTo(safeAreaLayoutGuide)
             $0.leading.trailing.equalToSuperview()
         }
     

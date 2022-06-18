@@ -76,14 +76,10 @@ class SignUpViewController: BaseViewController {
     @objc private func signUpButtonClicked() {
         viewModel.postSignUp { error in
             if error != nil {
-                let alert = UIAlertController(title: "오류", message: "이미 존재하는 아이디 혹은 이메일입니다.", preferredStyle: .alert)
-                let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
-                alert.addAction(ok)
-                self.present(alert, animated: true, completion: nil)
+                let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+                self.presentAlert(title: "에러", message: "이미 존재하는 아이디 혹은 이메일입니다.", alertActions: okAction)
             } else {
-                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
-                windowScene.windows.first?.rootViewController = UINavigationController(rootViewController: StartViewController())
-                windowScene.windows.first?.makeKeyAndVisible()
+                self.navigator?.changeFirstViewController(firstVC: MainPostViewController())
             }
         }
     }

@@ -44,20 +44,24 @@ class DetailPostHeadView: BaseUIView {
 
     override func setupConstraints() {
         profileImageView.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.leading.equalTo(safeAreaLayoutGuide).offset(20)
-            $0.width.equalTo(30)
+            $0.top.equalToSuperview().offset(10)
+            $0.leading.equalToSuperview().offset(10)
+            $0.width.height.equalTo(60)
         }
         
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(profileImageView.snp.top)
             $0.leading.equalTo(profileImageView.snp.trailing).offset(10)
+            $0.trailing.equalToSuperview()
+            $0.height.equalTo(30)
         }
         
         dateLabel.snp.makeConstraints {
             $0.top.equalTo(nameLabel.snp.bottom)
             $0.leading.equalTo(nameLabel)
+            $0.trailing.equalToSuperview()
             $0.bottom.equalTo(profileImageView.snp.bottom)
+            $0.height.equalTo(30)
         }
         
         dividerView.snp.makeConstraints {

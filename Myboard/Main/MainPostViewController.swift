@@ -11,6 +11,8 @@ class MainPostViewController: BaseViewController {
     
     let postView = MainPostView()
     let viewModel = MainPostViewModel()
+    let cellSpacingHeight: CGFloat = 5
+
     
     
     override func loadView() {
@@ -20,7 +22,7 @@ class MainPostViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
+        view.backgroundColor = .systemBackground
     }
     
     override class func awakeFromNib() {
@@ -79,8 +81,8 @@ extension MainPostViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostViewCell.reuseIdentifier, for: indexPath) as? PostViewCell else { return UITableViewCell() }
         let data = viewModel.post.value[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostViewCell.reuseIdentifier) as? PostViewCell else { return UITableViewCell() }
         cell.bind(post: data)
         return cell
     }
@@ -90,7 +92,11 @@ extension MainPostViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigator?.changeTo(viewController: DetailViewController(), transitionStyle: .push)
+        
+        let detailViewController = DetailViewController()
+        let data = viewModel.post.value[indexPath.row]
+        detailViewController.post = data
+        navigator?.changeTo(viewController: detailViewController, transitionStyle: .push)
     }
     
 }

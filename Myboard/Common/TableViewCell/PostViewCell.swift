@@ -60,7 +60,6 @@ class PostViewCell: UITableViewCell {
             $0.leading.equalTo(nameLabel)
             $0.trailing.equalToSuperview()
             $0.height.greaterThanOrEqualTo(100)
-
         }
         
         dateLabel.snp.makeConstraints {

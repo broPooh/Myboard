@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
             rootViewController = StartViewController()
         }
-        rootViewController = MainPostViewController()
+        //rootViewController = MainPostViewController()
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
 

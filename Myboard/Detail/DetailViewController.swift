@@ -12,6 +12,7 @@ class DetailViewController: BaseViewController {
     let detailView = DetailView()
     let viewModel = DetailViewModel()
     var postId: Int?
+    var post: Post?
     
     override func loadView() {
         self.view = detailView
@@ -24,16 +25,21 @@ class DetailViewController: BaseViewController {
     
     override func configure() {
         super.configure()
-        
+        navigationConfig()
         tableViewConfig()
     }
         
     func navigationConfig() {
-        navigationItem.largeTitleDisplayMode = .never
+        let navigationAppearance = UINavigationBarAppearance()
+        navigationAppearance.configureWithDefaultBackground()
+        print(navigationController)
+        self.navigationController?.navigationBar.standardAppearance = navigationAppearance
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func bind() {
         viewModel.detailPost()
+        postConfig()
         
         viewModel.post.bind { post in
             self.detailView.detailHeaderView.nameLabel.text = post.user
@@ -49,6 +55,12 @@ class DetailViewController: BaseViewController {
         if viewModel.post.value.userId == UserDefaultManager.userId {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: SystemImage.ellipsis.rawValue), style: .plain, target: self, action: #selector(postUpdate))
         }
+    }
+    
+    func postConfig() {
+        detailView.detailHeaderView.textLable.text = post?.text
+        detailView.detailHeaderView.nameLabel.text = post?.user
+        detailView.detailHeaderView.dateLabel.text = post?.updatedAt
     }
     
     private func tableViewConfig() {
