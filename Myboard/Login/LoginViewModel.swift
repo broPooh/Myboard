@@ -5,10 +5,29 @@
 //  Created by bro on 2022/06/17.
 //
 
-import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
-class LoginViewModel {
+class LoginViewModel: CommentViewModel {
+    var disposBag = DisposeBag()
+    
+    struct Input {
+        let email: ControlProperty<String?>
+        let password: ControlProperty<String?>
+        let tap: ControlEvent<Void>
+    }
+    
+    struct Output {
+        let validButtonStatus: Observable<Bool>
+        let validText: BehaviorRelay<String>
+        let sceneTransition: ControlEvent<Void>
+    }
+    
+    let emailRx = PublishSubject<String>()
+    let passwordRx = PublishSubject<String>()
+    
+    
     var email: Observable<String> = Observable("")
     var password: Observable<String> = Observable("")
             

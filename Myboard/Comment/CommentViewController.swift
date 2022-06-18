@@ -15,7 +15,6 @@ class CommentViewController: BaseViewController {
     var commentId: Int?
     
     override func loadView() {
-        super.loadView()
         self.view = commentView
     }
     

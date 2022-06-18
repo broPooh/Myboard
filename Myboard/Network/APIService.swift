@@ -31,11 +31,31 @@ class APIService {
     }
     
     //MARK: - relateive Post
+    static func fetchPost(completion: @escaping ([Post]?, APIError?) -> Void) {
+        var request = URLRequest(url: Endpoint.post.url)
+        request.httpMethod = Method.GET.rawValue
+        request.setValue("Bearer \(UserDefaultManager.token)", forHTTPHeaderField: "Authorization")
+        
+        URLSession.request(endpoint: request, completion: completion)
+    }
+    
     static func fetchPost(startPage: Int, limitPage: Int = 10, completion: @escaping ([Post]?, APIError?) -> Void) {
         var request = URLRequest(url: Endpoint.post.url)
         request.httpMethod = Method.GET.rawValue
         request.setValue("Bearer \(UserDefaultManager.token)", forHTTPHeaderField: "Authorization")
         
+        URLSession.request(endpoint: request, completion: completion)
+    }
+    
+    static func fetchPostsFromPage(startPage: Int, limitPage: Int = 10, completion: @escaping ([Post]?, APIError?) -> Void) {
+        guard var component = URLComponents(string: Endpoint.post.urlString) else { return }
+        component.queryItems = [
+            URLQueryItem(name: "_start", value: "\(startPage)"),
+            URLQueryItem(name: "_limit", value: "\(limitPage)"),
+            URLQueryItem(name: "_sort", value: "created_at:desc")
+        ]
+
+        let request = URLRequest(url: component.url!)
         URLSession.request(endpoint: request, completion: completion)
     }
     
@@ -71,6 +91,5 @@ class APIService {
     static func deleteComment() {
         
     }
-    
     
 }

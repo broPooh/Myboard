@@ -16,6 +16,12 @@ struct Navigator {
         self.viewController = vc
     }
     
+    func changeFirstViewController(firstVC: UIViewController) {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+        windowScene.windows.first?.rootViewController = UINavigationController(rootViewController: firstVC)
+        windowScene.windows.first?.makeKeyAndVisible()
+    }
+    
     func changeTo(viewController targetVC: UIViewController, transitionStyle: TransitionStyle = .present) {
         switch transitionStyle {
         case .push:

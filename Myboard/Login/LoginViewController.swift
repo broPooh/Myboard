@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LoginViewController: BaseViewController {
     
@@ -37,6 +39,12 @@ class LoginViewController: BaseViewController {
         }
     }
     
+    func rxBind() {
+        //let input = viewModel.Input(text: nameTextFiled.rx.text, tap: button.rx.tap)
+        let input = LoginViewModel.Input(email: loginView.emailTextField.rx.text, password: loginView.passwordTextField.rx.text, tap: loginView.loginButton.rx.tap)
+                
+    }
+    
     func targetConfig() {
         loginView.emailTextField.addTarget(self, action: #selector(emailFieldDidChange(_:)), for: .editingChanged)
         loginView.passwordTextField.addTarget(self, action: #selector(passwordFieldDidChange(_:)), for: .editingChanged)
@@ -56,14 +64,10 @@ class LoginViewController: BaseViewController {
     @objc private func loginButtonClicked() {
         viewModel.postLogin { error in
             if error != nil {
-                let alert = UIAlertController(title: "오류", message: "잘못된 로그인 정보입니다.", preferredStyle: .alert)
                 let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
-                alert.addAction(ok)
-                self.present(alert, animated: true, completion: nil)
+                self.presentAlert(title: "오류", message: "잘못된 로그인 정보입니다.", alertActions: ok)
             } else {
-                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
-                windowScene.windows.first?.rootViewController = UINavigationController(rootViewController: MainPostViewController())
-                windowScene.windows.first?.makeKeyAndVisible()
+                self.navigator?.changeFirstViewController(firstVC: MainPostViewController())
             }
         }
     }
