@@ -249,10 +249,6 @@
 		1B964C48285476B2004B4C41 /* Myboard */ = {
 			isa = PBXGroup;
 			children = (
-				1B1593E8285CA45C00D9EA56 /* Comment */,
-				1B1593D4285C6E5D00D9EA56 /* Detail */,
-				1B1593CD285C614400D9EA56 /* WritePost */,
-				1B1593C2285C438100D9EA56 /* TableViewCell */,
 				1B964C79285480DD004B4C41 /* Base */,
 				1B964C7F285494E5004B4C41 /* Common */,
 				1B964C7C28549494004B4C41 /* Enums */,
@@ -260,10 +256,13 @@
 				1B964C6B285478F8004B4C41 /* Protocol */,
 				1B964C742854803B004B4C41 /* Util */,
 				1B1593AA285C2BC800D9EA56 /* Network */,
-				1B15939C285C113F00D9EA56 /* Login */,
-				1B15939F285C117C00D9EA56 /* SignUp */,
 				1B15939B285C10D900D9EA56 /* Start */,
+				1B15939F285C117C00D9EA56 /* SignUp */,
+				1B15939C285C113F00D9EA56 /* Login */,
 				1B1593BD285C3ABA00D9EA56 /* Main */,
+				1B1593CD285C614400D9EA56 /* WritePost */,
+				1B1593D4285C6E5D00D9EA56 /* Detail */,
+				1B1593E8285CA45C00D9EA56 /* Comment */,
 				1B964C49285476B2004B4C41 /* AppDelegate.swift */,
 				1B964C4B285476B2004B4C41 /* SceneDelegate.swift */,
 				1B964C52285476B4004B4C41 /* Assets.xcassets */,
@@ -326,9 +325,10 @@
 		1B964C7F285494E5004B4C41 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1B964C80285494F1004B4C41 /* Navigator.swift */,
 				1B8CAFE22859750200647D18 /* UserDefaultWrapper.swift */,
 				1B8CAFE4285975B300647D18 /* UserDefaultsManager.swift */,
+				1B964C80285494F1004B4C41 /* Navigator.swift */,
+				1B1593C2285C438100D9EA56 /* TableViewCell */,
 			);
 			path = Common;
 			sourceTree = "<group>";

@@ -14,13 +14,18 @@ class MainPostViewController: BaseViewController {
     
     
     override func loadView() {
-        super.loadView()
         self.view = postView
+        print(#function)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        print(#function)
+    }
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        print(#function)
     }
     
     override func configure() {

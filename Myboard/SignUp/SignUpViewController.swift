@@ -13,7 +13,6 @@ class SignUpViewController: BaseViewController {
     let viewModel = SignUpViewModel()
     
     override func loadView() {
-        super.loadView()
         self.view = signUpView
     }
     

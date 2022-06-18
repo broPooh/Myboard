@@ -13,7 +13,6 @@ class StartViewController: BaseViewController {
     let viewModel = StartViewModel()
     
     override func loadView() {
-        super.loadView()
         self.view = startView
     }
 

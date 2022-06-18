@@ -14,7 +14,6 @@ class DetailViewController: BaseViewController {
     var postId: Int?
     
     override func loadView() {
-        super.loadView()
         self.view = detailView
     }
     
@@ -63,7 +62,7 @@ class DetailViewController: BaseViewController {
         }
         let delete = UIAlertAction(title: "삭제", style: .destructive) { action in
             //TODO: 삭제 로직 진행
-            self.viewModel.deleteComment()
+            self.viewModel.deletePost()
         }
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         

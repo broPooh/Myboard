@@ -13,7 +13,6 @@ class LoginViewController: BaseViewController {
     let viewModel = LoginViewModel()
     
     override func loadView() {
-        super.loadView()
         self.view = loginView
     }
     

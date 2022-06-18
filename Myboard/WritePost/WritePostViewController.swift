@@ -15,7 +15,6 @@ class WritePostViewController: BaseViewController {
     let viewModel = WritePostModel()
     
     override func loadView() {
-        super.loadView()
         self.view = writePostView
     }
     
